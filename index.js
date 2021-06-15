@@ -122,7 +122,9 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval);
-  
+  for(let x = 0; x < ROCKS.length; x++) {
+    ROCKS[x] = 
+  }
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
 }
