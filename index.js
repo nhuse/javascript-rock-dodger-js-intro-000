@@ -169,7 +169,7 @@ function moveDodgerRight() {
   var rightNumbers = DODGER.style.left.replace('px', '');
   var right = parseInt(rightNumbers, 10);
   DODGER.style.right = `${right + 4}px`;
-  if(left < 360) {
+  if(right < 360) {
     window.requestAnimationFrame(moveDodgerRight);
   }
 }
