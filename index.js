@@ -138,6 +138,12 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+  if (e.which === LEFT_ARROW) {
+    moveDodgerLeft();
+  }
+  if (e.which === RIGHT_ARROW) {
+    moveDodgerRight();
+  }
 }
 
 function moveDodgerLeft() {
@@ -148,10 +154,10 @@ function moveDodgerLeft() {
    */
   var leftNumbers = DODGER.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
-  if()
   rock.style.left = `${left - 4}px`;
-  
-   
+  if(left > 0) {
+    window.requestAnimationFrame(moveDodgerLeft);
+  }
 }
 
 function moveDodgerRight() {
