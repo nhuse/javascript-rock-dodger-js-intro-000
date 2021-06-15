@@ -144,9 +144,9 @@ function moveDodger(e) {
     e.preventDefault();
   }
   if (e.which === RIGHT_ARROW) {
-    moveDodgerRight();
     e.preventDefault();
     e.stopPropagation();
+    moveDodgerRight();
   }
 }
 
