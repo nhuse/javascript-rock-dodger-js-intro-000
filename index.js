@@ -147,6 +147,8 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
   
+  rock.style.left = `${top - 4}px`;
+  
    
 }
 
